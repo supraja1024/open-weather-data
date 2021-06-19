@@ -7,9 +7,9 @@
     <div class="row">
         <div class="col-sm-4 city-tile" *ngFor="let entry of entries" (click)="goto(entry)">
             <div class="tile purple">
-                <h3 class="title">{{entry.name}} Meter/Sec</h3>
+                <h3 class="title">{{entry.name}}</h3>
                 <p>Temperature: {{entry.main.temp}} Kelvin</p>
-                <p>Wind Strength: {{entry.wind.speed}}</p>
+                <p>Wind Strength: {{entry.wind.speed}} Meter/Sec</p>
             </div>
         </div>
     </div>
