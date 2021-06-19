@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 weather-data-heading">
+            <h2>Open Weather Data of {{cityName}} for next Hourss</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm border">
+            <h4>Date/Time</h4>
+        </div>
+        <div class="col-sm border">
+            <h4>Wind Strength</h4>
+        </div>
+        <div class="col-sm border">
+            <h4>Temperature</h4>
+        </div>
+    </div>
+    <div class="row" *ngFor="let entry of cityData">
+        <div class="col-sm border">
+            {{formatDate(entry.dt)}}
+        </div>
+        <div class="col-sm border">
+            {{entry.wind.speed}} Meter/Sec
+        </div>
+        <div class="col-sm border">
+            {{entry.main.temp}} Kelvin
+        </div>
+    </div>
+    <div class="col-sm footer-btns">
+        <button type="button" class="btn btn-primary" (click)="goToList()">Go to List</button>
+    </div>
+</div>

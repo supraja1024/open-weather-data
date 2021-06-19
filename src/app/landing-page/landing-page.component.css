@@ -1,0 +1,18 @@
+.city-tile {
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.purple {
+    background: #5133AB;
+    color: #fff;
+}
+.purple:hover {
+    background: darken(#5133AB, 10%);
+ }
+ .tile {  
+    width: 100%;
+    display: inline-block;
+	box-sizing: border-box;
+	padding: 20px;
+	margin-bottom: 30px;
+} 
